@@ -1,14 +1,15 @@
 import React from 'react';
 
 function Users(props) {
+  {console.log("this is props in Users : "+ props.users)}
   var usersDivs = null;
   if(props.users){
     var sorted = props.users.sort((a,b) => {
       return a[props.sortOn] > b[props.sortOn];
     });
     usersDivs = sorted.filter(function(u){
-      return !props.firstNameFilter || 
-      (props.firstNameFilter && 
+      return !props.firstNameFilter ||
+      (props.firstNameFilter &&
       u.first_name.indexOf(props.firstNameFilter) > -1);
     })
     usersDivs = usersDivs.map(function(u){

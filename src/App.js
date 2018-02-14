@@ -1,9 +1,12 @@
 import React from 'react';
 import CounterButton from "./components/CounterButton";
-import SpecialTextBox from "./components/SpecialTextBox";
+// import SpecialTextBox from "./components/SpecialTextBox";
+import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
 import Counter from "./components/Counter";
-import SpecialText from "./components/SpecialText";
-import UserButtons from "./components/UserButtons";
+// import SpecialText from "./components/SpecialText";
+import SpecialTextContainer from "./containers/SpecialTextContainer";
+// import UserButtons from "./components/UserButtons";
+import UserButtonsContainer from "./containers/UserButtonsContainer";
 import Thermostat from "./components/Thermostat";
 import Users from "./components/Users";
 import ChangeTemperature from "./components/ChangeTemperature";
@@ -21,11 +24,11 @@ function App() {
   return (
       <div className="App">
         <div className="container">
-          <CounterButton />
-          <br />
-          <SpecialTextBox />
-          <br />
-          <UserButtons />
+        <CounterButton />
+           <br />
+          <SpecialTextBoxContainer />
+           <br />
+          <UserButtonsContainer />
           <br />
           <CityDropDown />
            <br />
@@ -42,9 +45,9 @@ function App() {
           <ShowModal />
         </div>
         <div className="container">
-          <Counter />
+        <Counter />
           <br />
-          <SpecialText />
+          <SpecialTextContainer />
           <br />
           <CurrentCity />
           <br />
@@ -52,13 +55,13 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          
-          
+
+
         </div>
         <div className="container">
-          <Users />
+        <Users />
         </div>
-        <Modal />
+      <Modal />
       </div>
   );
 }

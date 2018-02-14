@@ -1,8 +1,17 @@
+
+// don't forget to link up with Reducers
 export function increaseCounter(){
   return {
     type:"INCREASE_COUNTER"
   }
 }
+
+export function decreaseCounter(){
+  return {
+    type:"DECREASE_COUNTER"
+  }
+}
+
 
 export function setSpecialText(txt){
   return {
@@ -17,8 +26,9 @@ export function addUser(user){
     value:user
   }
 }
-export function removeUser(){
+export function removeUser(user){
   return {
-    type:"REMOVE_USER"
+    type:"REMOVE_USER",
+    value: user
   }
 }
