@@ -16,7 +16,11 @@ function users(state =[], action){
     return [...state, action.value];
   }
   if(action.type === "REMOVE_USER"){
-    return state;
+    // let arr=state;
+    // arr.pop();  <<< ---this works b/c there is a new array
+    // return arr; //Readme says to use 'slice()'  b/c Redux doesn't allow you to edit the same state
+
+    return state.slice(1); //use Slice b/c Redux doesn't allow you to edit the same state object
   }
   return state;
 }
@@ -30,14 +34,23 @@ function specialText(state = "", action){
 }
 
 function currentCity(state = "", action){
+  if(action.type ==="SET_CURRENT_CITY"){
+    return action.value;
+  }
   return state;
 }
 
 function searchText(state = "", action){
-  return state;
+  if(action.type ==="SET_SEARCH_TEXT"){
+    return action.value;
+  }
+return state;
 }
 
 function currentTemp(state = "", action){
+  if(action.type ==="SET_CURRENT_TEMP"){
+    return action.value;
+  }
   return state;
 }
 
@@ -46,14 +59,26 @@ function isLoading(state = "", action){
 }
 
 function videoURL(state = "", action){
+  if(action.type ==="SET_VIDEO_URL"){
+    console.log("action.value url:  "+ action.value)
+    return action.value;
+  }
   return state;
 }
 
 function currentUserSort(state = "", action){
+  if(action.type ==="SET_CURRENT_USER"){
+    console.log("action.value:  "+ action.value)
+    return action.value;
+  }
   return state;
 }
 
 function videoScale(state = "", action){
+  if(action.type ==="SET_VIDEO_SCALE"){
+    console.log("action.value scale:  "+ action.value)
+    return action.value;
+  }
   return state;
 }
 

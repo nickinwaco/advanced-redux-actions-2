@@ -28,7 +28,45 @@ export function addUser(user){
 }
 export function removeUser(user){
   return {
-    type:"REMOVE_USER",
-    value: user
+    type:"REMOVE_USER"
+  }
+}
+
+export function setCurrentCity(txt){
+  return {
+    type:"SET_CURRENT_CITY",
+    value:txt
+  }
+}
+
+export function setCurrentTemp(txt){
+  return {
+    type:"SET_CURRENT_TEMP",
+    value:txt
+  }
+}
+
+
+export function searchText(txt){
+  console.log("testing")
+  return {
+    type:"SET_SEARCH_TEXT",
+    value:txt
+  }
+}
+
+export function currentUserSort(txt){
+  console.log("waht is txt: " + txt)
+  return {
+    type:"SET_CURRENT_USER",
+    value:txt
+  }
+}
+
+export function setVideoURL(txt){
+  console.log("what is video txt: " + txt)
+  return {
+    type:"SET_VIDEO_URL",
+    value:txt
   }
 }
