@@ -48,7 +48,6 @@ export function setCurrentTemp(txt){
 
 
 export function searchText(txt){
-  console.log("testing")
   return {
     type:"SET_SEARCH_TEXT",
     value:txt
@@ -56,7 +55,7 @@ export function searchText(txt){
 }
 
 export function currentUserSort(txt){
-  console.log("waht is txt: " + txt)
+  console.log("waht is txt in current user sort: " + txt)
   return {
     type:"SET_CURRENT_USER",
     value:txt
@@ -67,6 +66,15 @@ export function setVideoURL(txt){
   console.log("what is video txt: " + txt)
   return {
     type:"SET_VIDEO_URL",
+    value:txt
+  }
+}
+
+
+export function setVideoScale(txt){
+  console.log("what is video scale: " + txt)
+  return {
+    type:"SET_VIDEO_SCALE",
     value:txt
   }
 }

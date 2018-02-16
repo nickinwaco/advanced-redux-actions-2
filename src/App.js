@@ -25,8 +25,11 @@ import CurrentCityContainer from "./containers/CurrentCityContainer";
 import CityDropDownContainer from "./containers/CityDropDownContainer";
 // import SearchTextBox from "./components/SearchTextBox";
 import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
+
+//import SortUsers from "./components/SortUsers";
+import SortUsersContainer from "./containers/SortUsersContainer";
+// import ScaleVideo from "./components/ScaleVideo";
+import VideoScaleContainer from "./containers/VideoScaleContainer";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
 
@@ -48,9 +51,9 @@ function App() {
           <br />
           <VideoTextBoxContainer />
           <br />
-          <SortUsers />
+          <SortUsersContainer />
           <br />
-          <ScaleVideo />
+          <VideoScaleContainer />
           <br />
           <ShowModal />
         </div>

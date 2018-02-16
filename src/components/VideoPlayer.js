@@ -4,6 +4,7 @@ function VideoPlayer(props) {
   let width = 200;
   let height = 200;
   // let url = "'https://www.youtube.com/watch?v=VH-LFiYdxNY'"
+  // https://www.youtube.com/embed/v=JPHguuFQvkU ---have to replace "watch?"
   if(props.scale){
     width = 200 * props.scale;
     height = 200 * props.scale;

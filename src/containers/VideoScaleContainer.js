@@ -1,14 +1,15 @@
 import {connect} from "react-redux";
 
-import {videoScale} from "../actions/index";
+import {setVideoScale} from "../actions/index";
 import ScaleVideo from "../components/ScaleVideo";
 
 
 
 function mapDispatchToProps (dispatch){
   return {
-    set: function(user) {
-      let action = videoScale(user)
+    set: function(txt) {
+      let action = setVideoScale(txt)
+  console.log("what is the action of scale?: " + action)
       dispatch(action);
     }
   }
