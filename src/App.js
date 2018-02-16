@@ -30,8 +30,11 @@ import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
 import SortUsersContainer from "./containers/SortUsersContainer";
 // import ScaleVideo from "./components/ScaleVideo";
 import VideoScaleContainer from "./containers/VideoScaleContainer";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+// import Modal from "./components/Modal";
+import ModalContainer from "./containers/ModalContainer";
+// import ShowModal from "./components/ShowModal";
+import ShowModalContainer from "./containers/ShowModalContainer";
+
 
 function App() {
   return (
@@ -55,7 +58,7 @@ function App() {
           <br />
           <VideoScaleContainer />
           <br />
-          <ShowModal />
+          <ShowModalContainer />
         </div>
         <div className="container">
         <Counter />
@@ -74,7 +77,7 @@ function App() {
         <div className="container">
         <UsersContainer />
         </div>
-      <Modal />
+      <ModalContainer />
       </div>
   );
 }

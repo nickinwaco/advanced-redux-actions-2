@@ -55,8 +55,13 @@ function currentTemp(state = "", action){
 }
 
 function isLoading(state = "", action){
+  if(action.type ==="SET_IS_LOADING"){
+console.log("acion vlaue for isloading "+ action.value)
+    return action.value;
+  }
   return state;
 }
+
 
 function videoURL(state = "", action){
   if(action.type ==="SET_VIDEO_URL"){

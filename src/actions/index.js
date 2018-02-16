@@ -71,10 +71,18 @@ export function setVideoURL(txt){
 }
 
 
-export function setVideoScale(txt){
+export function aaasetVideoScale(txt){
   console.log("what is video scale: " + txt)
   return {
     type:"SET_VIDEO_SCALE",
+    value:txt
+  }
+}
+
+export function setIsLoading(txt){
+  console.log("what is video scale: " + txt)
+  return {
+    type:"SET_IS_LOADING",
     value:txt
   }
 }
